@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F4Bank</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>F4Bank, tradição e informação no seu bolso</h1>
-        <img src="./Midia/F4Bank logo.avif" height="100" alt="logo" />
+      <div class="logo">
+        <img src="./Midia/F4Bank logo.avif" height="90" alt="logo" />
+      </div>
+
+      <nav>
+        <ul>
+          <a href="#"><li>Página inicial</li></a>
+          <a href="#"><li>O F4Bank</li></a>
+          <a href="#"><li>Pra Você</li></a>
+          <a href="#"><li>Contato</li></a>
+        </ul>
+      </nav>
+      <div class="logout">Logout</div>
     </header>
 
     <main>
-        <section>
-            <article>
+      <aside>
+        <h2 class="title">Cartão sem taxa</h2>
+      </aside>
+      <aside>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s
+        </p>
+      </aside>
 
-            </article>
+      <aside>
+        <h2 class="title">Conta corrente digital</h2>
+      </aside>
+      <aside>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s
+        </p>
+      </aside>
 
-            <article>
-
-            </article>
-        </section>
-
+      <article>
+        <img src="./Midia/pexels-photo-5935744.webp" alt="homem-cartao" height="293px" />
+      </article>
+      <article>
+        <img src="./Midia/jovens-felizes-conversando.webp" alt="pessoas-cartao" height="270px" />
+      </article>
     </main>
 
     <footer>
-
+      Deixe seu contato aqui para que nossa equipe entre em contato com você!
+      <form action="#">
+        <label for="telefone">Telefone</label>
+        <input
+          placeholder="Digite o número de telefone"
+          type="text"
+          id="telefone"
+          required
+        />
+        <label for="e-mail">E-mail</label>
+        <input
+          placeholder="Digite seu e-mail"
+          type="text"
+          id="e-mail"
+          required
+        />
+        <button type="submit">Enviar contatos!</button>
+      </form>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
