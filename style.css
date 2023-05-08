@@ -124,7 +124,7 @@ h3 {
 
 .nav_item {
   display: flex;
-  margin: 0 2rem;
+  margin: 0 0.8rem;
 }
 
 /* ------------------BODY-------------------- */
@@ -338,7 +338,7 @@ h3 {
 }
 
 /* ===========RESPONSIVIDADE SMARTPHONE============= */
-@media screen and (min-width: 425px) and (max-width: 880px) {
+@media screen and (min-width: 375px) and (max-width: 880px) {
  
   /*  ===========HEADER============== */
 
@@ -347,6 +347,8 @@ h3 {
     --h2-size: 1.5rem;
     --h3-size: 0.6rem;
   }
+
+  
 
   .logo {
     display: none;
@@ -417,11 +419,7 @@ h3 {
   .footer__container {
     height: auto;
   }
-
-  .footer__contatos {
-    margin-left: 5rem;
-  }
-
+  
   .footer__contatos h3 {
     font-size: 3rem;
   }
