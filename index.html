@@ -1,80 +1,226 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
     <title>F4Bank</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <img src="./Midia/F4Bank logo.avif" height="90" alt="logo" />
-      </div>
+    <div class="container">
+      <!--HEADER-->
 
-      <nav>
-        <ul>
-          <a href="#"><li>Página inicial</li></a>
-          <a href="#"><li>O F4Bank</li></a>
-          <a href="#"><li>Pra Você</li></a>
-          <a href="#"><li>Contato</li></a>
-        </ul>
-      </nav>
-      <div class="logout">Logout</div>
-    </header>
+      <header class="m-header" id="header">
+        <div class="h-container">
+          <nav class="nav">
+            <a href="#home" class="nav_logo">
+              <img class="logo" src="./Midia/F4Bank-logo.avif" alt="logo" />
+            </a>
+            <div class="nav_menu" id="nav-menu">
+              <ul class="nav_list">
+                <li class="nav_item">
+                  <a href="#home" class="nav_link">Home</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#cartao" class="nav_link">Cartão</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#aplicativo" class="nav_link">Aplicativo</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#contatos" class="nav_link">Contate-nos</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
 
-    <main>
-      <aside>
-        <h2 class="title">Cartão sem taxa</h2>
-      </aside>
-      <aside>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
-        </p>
-      </aside>
+      <!-- MAIN-->
+      <main class="m-main">
+        <!--SECTION ONE-->
 
-      <aside>
-        <h2 class="title">Conta corrente digital</h2>
-      </aside>
-      <aside>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
-        </p>
-      </aside>
+        <article class="home_container" id="home">
+          <div class="home_data">
+            <h1 class="home_title">
+              Peça aqui o seu cartão sem taxa do F4Bank
+            </h1>
+            <h2 class="home_subtitle">
+              Confira exclusividades únicas dos usuários
+            </h2>
+            <a href="#home" class="button">Abra sua conta agora</a>
+          </div>
+          <form action="#" class="form_container">
+            <div class="form_text">
+              <p>
+                Digite aqui seus dados para nossa equipe entrar em contato com
+                você!
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="name"></label>
+              <input
+                id="cpfInput"
+                type="text"
+                name="name"
+                placeholder="Digite seu CPF"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email"></label>
+              <input
+                id="emailInput"
+                type="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email"></label>
+              <input
+                id="telefoneInput"
+                type="telefone"
+                name="email"
+                placeholder="Digite seu telefone"
+              />
+            </div>
+            <div class="form_button">
+              <button class="button_form" id="button_form">Enviar</button>
+            </div>
+          </form>
+        </article>
 
-      <article>
-        <img src="./Midia/pexels-photo-5935744.webp" alt="homem-cartao" height="293px" />
-      </article>
-      <article>
-        <img src="./Midia/jovens-felizes-conversando.webp" alt="pessoas-cartao" height="270px" />
-      </article>
-    </main>
+        <!--SECTION TWO-->
 
-    <footer>
-      Deixe seu contato aqui para que nossa equipe entre em contato com você!
-      <form action="#">
-        <label for="telefone">Telefone</label>
-        <input
-          placeholder="Digite o número de telefone"
-          type="text"
-          id="telefone"
-          required
-        />
-        <label for="e-mail">E-mail</label>
-        <input
-          placeholder="Digite seu e-mail"
-          type="text"
-          id="e-mail"
-          required
-        />
-        <button type="submit">Enviar contatos!</button>
-      </form>
-    </footer>
+        <article class="home_container" id="cartao">
+          <div class="home_data">
+            <h1 class="home_title">
+              Conheça nosso <span>cartão de crédito sem taxa</span>
+            </h1>
+            <h2 class="home_subtitle">
+              Além de não possuir taxa, com o nosso cartão você acumular milhas,
+              você pode acessar ele da palma da sua mão, através do nosso
+              aplicativo.
+            </h2>
+            <a href="#home" class="button">Saiba mais</a>
+          </div>
+          <img
+            class="img_note"
+            src="./Midia/pexels-andrea-piacquadio-3767397.jpg"
+            alt="homem__notebook"
+          />
+        </article>
+
+        <!--SECTION THREE-->
+
+        <article class="home_container" id="aplicativo">
+          <img
+            class="img_smartphone"
+            src="./Midia/celulares2.png"
+            alt="smartphones"
+          />
+          <div class="home_data">
+            <h1 class="home_title">
+              Aqui seu dinheiro <span>rende mais</span>
+            </h1>
+            <h2 class="home_subtitle">
+              Acompanhe seus rendimentos através de nosso aplicativo
+            </h2>
+            <a href="#home" class="button">Saiba mais</a>
+          </div>
+        </article>
+      </main>
+      <!--FOOTER-->
+      <footer>
+        <div class="footer__container" id="contatos">
+          <div class="footer__contatos">
+            <h3>F4Bank</h3>
+            <p>Siga-nos em nossas redes sociais</p>
+
+            <div class="footer__midias" id="midias">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/"
+                class="footer__midias-icon"
+                id="instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="https://www.facebook.com/"
+                class="footer__midias-icon"
+                id="facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a
+                target="_blank"
+                href="https://www.whatsapp.com/?lang=pt_br"
+                class="footer__midias-icon"
+                id="whatsapp"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <ul class="footer__list" id="lista-1">
+            <li>
+              <h3>Precisa de ajuda?</h3>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Central de ajuda</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Ouvidoria</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Saldo devedor</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list" id="lista-2">
+            <li>
+              <h3>Produtos</h3>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Conta digital</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Cartão de crédito</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Empréstimo</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list" id="lista-3">
+            <li>
+              <h3>Informações</h3>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Termos de uso</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Relatórios financeiros</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Mapa do site</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
